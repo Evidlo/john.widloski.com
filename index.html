@@ -3,52 +3,17 @@
 <html>
 
     <head>
-        <style>
-         body {
-             font-family: helvetica;
-             font-size: 10pt;
-         }
-
-         main {
-             display: grid;
-             grid-template-columns: 1fr;
-             column-gap: 5ch;
-             max-width: 120ch;
-             margin: 0 auto 0 auto;
-         }
-
-         #sidebar img {
-             width: 200px;
-         }
-
-         /* Desktop view */
-         @media screen and (min-width: 500px) {
-             main {
-                 grid-template-columns: 1fr 4fr;
-             }
-
-             #title {
-                 grid-row: 1 / 2;
-                 grid-column: 1 / 3;
-             }
-
-             #sidebar {
-                 grid-row: 2 / 3;
-                 grid-column: 1 / 2;
-             }
-
-             #main {
-                 grid-row: 2 / 3;
-                 grid-column: 2 / 3;
-             }
-         }
-
-        </style>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <meta name="viewport" content="width=device-width">
     </head>
 
     <body>
         <main>
+
             <h1 id="title">John Widloski</h1><br>
+
+            <!-- ----- Sidebar ----- -->
+
             <div id="sidebar">
                 <img src="john.jpg">
                 <p>Some stuff</p>
@@ -58,22 +23,20 @@
                 <p><a href="http://example.com">Google Scholar</a></p>
             </div>
 
+            <!-- ----- Main Content ----- -->
+
             <div id="main">
-                <h1>Education</h1>
+                <h2>Education</h2>
                 <ul>
-                    <li> PhD Computational Science and Engineering, <b>Georgia Institute of Technology</b> <i>(In progress)</i> <br> </li>
-                    <li> MSc Geophysics, <b>University of Tehran</b> <br> </li>
-                    <li> BSc Electrical Engineering, <b>Sharif University of Technology</b> <br> </li>
+                    <li>PhD Computational Science and Engineering, <b>Georgia Institute of Technology</b> <i>(In progress)</i></li>
+                    <li>MSc Geophysics, <b>University of Tehran</b></li>
+                    <li>BSc Electrical Engineering, <b>Sharif University of Technology</b> <br> </li>
                 </ul>
                 <hr>
-                <h1>Education</h1>
-                <ul>
-                    <li> PhD Computational Science and Engineering, <b>Georgia Institute of Technology</b> <i>(In progress)</i> <br> </li>
-                    <li> MSc Geophysics, <b>University of Tehran</b> <br> </li>
-                    <li> BSc Electrical Engineering, <b>Sharif University of Technology</b> <br> </li>
-                </ul>
+                <h2>Research</h2>
+                Currently, my research is mainly focused on applications of deep learning in inverse problems and uncertainty quantification.
                 <hr>
-                <h1>Publications</h1>
+                <h2>Publications</h2>
                 <ul>
                     <li>
                         Gabrio Rizzuti, Ali Siahkoohi, Philipp A. Witte, et al. <b>Parameterizing uncertainty by deep invertible networks, an application to reservoir characterization</b>. Apr. 2020.
@@ -86,6 +49,7 @@
                     </li>
                 </ul>
             </div>
+
         </main>
     </body>
 
