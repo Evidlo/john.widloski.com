@@ -12,6 +12,10 @@ main {
     margin: 0 auto 0 auto;
 }
 
+li {
+    margin-bottom: 1ch;
+}
+
 hr {
     margin: 2ch 0 2ch 0;
 }
